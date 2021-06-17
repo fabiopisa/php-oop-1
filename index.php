@@ -12,7 +12,7 @@ BONUS:
 
 require_once __DIR__ . '/Movie.php';
 
-$film_1 = new Movie('Slevin', 'Triller',9);
+$film_1 = new Movie('Slevin, patto criminale', 'Triller',9);
 $film_2 = new Movie('Doom', 'Fantascienza',7.5);
 $film_3 = new Movie('Voglio mangiare il tuo pancreas', 'Anime, Romantico',10);
 $film_4 = new Movie('Alien', 'Triller, Fantascienza, horror',10);
@@ -57,6 +57,6 @@ $film_4 = new Movie('Alien', 'Triller, Fantascienza, horror',10);
     <li>Voto: <?php echo $film_4->getVote() ?></li>
   </ul>
 
-  <h2>Quanti film sono stati inseriti: <?php echo Movie::getCounter()?></h2>
+  <h2>Sono stati inseriti: <?php echo Movie::getCounter()?> film</h2>
 </body>
 </html>
